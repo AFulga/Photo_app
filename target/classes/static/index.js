@@ -1,9 +1,10 @@
 //pma.innerHTML = pmaTemplates.login;
 
-xhrPromise( 'POST','album', {"userId" : "1", "name" : "ddddd"} )
+/*xhrPromise( 'POST','album', {"userId" : "1", "name" : "ddddd"} )
 .then( () =>xhrPromise( 'POST','user', {"username" : "fulga3", "password" : "sdfd8888"} ) )
 .then( () => xhrPromise( 'POST','album', {"userId" : "1", "name" : "deal"} ) )
-.then( (result) => {
+.then( (result) =>*/
+(function() {
   const userId = 1;  
   function renderPagePhotos (name, albumId) {    
     renderImagesPage(name, albumId);
@@ -59,4 +60,4 @@ xhrPromise( 'POST','album', {"userId" : "1", "name" : "ddddd"} )
 
   renderPageAlbums(userId);
 
-});
+})();
