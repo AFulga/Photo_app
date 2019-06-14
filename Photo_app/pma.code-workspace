@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Photo_app",
+			"path": "."
+		},
+		{
+			"name": "Photo_App",
+			"path": "C:\\Users\\aurelian_fulga\\Desktop\\ful\\Spring project\\Photo_App"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}

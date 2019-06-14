@@ -1,0 +1,8 @@
+com\fulga\pma\entity\Album.class
+com\fulga\pma\repository\PhotoRepository.class
+com\fulga\pma\repository\UserRepository.class
+com\fulga\PmaApplication.class
+com\fulga\pma\repository\AlbumRepository.class
+com\fulga\pma\web\PmaController.class
+com\fulga\pma\entity\Photo.class
+com\fulga\pma\entity\User.class
