@@ -48,16 +48,13 @@
             albumName.value = "";
           } else {
             console.log('in error')
-            let errorMsg = "Provide a valid name";
-            if(data.response == "false")
-              errorMsg = "Folder already exists";
+            let errorMsg = data.response == "false" ? "Folder already exists" : "Provide a valid name";
             showError("#addFolderError", errorMsg);
           }
           
         });
       } else {
-        let errorMsg = "Provide a valid name";
-        showError("#addFolderError", errorMsg);
+        showError("#addFolderError", "Provide a valid name");
       }
       
 
