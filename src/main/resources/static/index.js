@@ -35,12 +35,13 @@
       const albumName = document.getElementById('albumName');
       
       showError("#addFolderError", "");
-      console.log(addFolder)
+      console.log(addFolder);
 
+      if(albumName.value.length > 0) {
         addDataToDB('album', {"userId" : userId, "name" : albumName.value}) 
         .then( data => {
           console.log(data.response,'|',data.status)
-          if(data.response == 'true' && data.status == 200 && albumName.value.length > 0) {
+          if(data.response == 'true' && data.status == 200) {
             console.log('in render')
             removeModal('addFolder');
             renderPageAlbums(userId);
@@ -54,6 +55,10 @@
           }
           
         });
+      } else {
+        let errorMsg = "Provide a valid name";
+        showError("#addFolderError", errorMsg);
+      }
       
 
     });
